@@ -11,5 +11,7 @@ namespace Bookify.Data
         public string ReviewContent { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateUpdated { get; set; }
+        public Book BookReviewed { get; set; }
+
     }
 }
