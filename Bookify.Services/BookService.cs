@@ -26,9 +26,8 @@ namespace Bookify.Services
             if (book != null)
             {
                 _db.Remove(book);
-
+                _db.SaveChanges();
             }
-            _db.SaveChanges();
         }
 
         public List<Book> GetAllBooks()
